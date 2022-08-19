@@ -9,6 +9,19 @@
 
 # #Point Network Testnet Incentivized
 
+##Automatic Install##
+```
+wget -O point.sh https://raw.githubusercontent.com/elangrr/point-auto/main/point.sh && chmod +x point.sh && ./point.sh
+```
+Setelah install load variable
+```
+source $HOME/.bash_profile
+```
+
+KALAU UDAH SELESAI INSTALL LANGSUNG KE STEP ##BUAT DOMPET(2)
+
+
+##MANUAL INSTALL##
 ## Setting up vars
 ```
 NODENAME=Bang_Pateng
@@ -115,7 +128,7 @@ sudo systemctl enable evmosd
 sudo systemctl restart evmosd && sudo journalctl -u evmosd -f -o cat
 ```
 
-## Buat dompet
+## Buat dompet(2)
 
 Untuk membuat dompet baru Anda dapat menggunakan perintah di bawah ini Masukan Pharse Metamask Kalian dan Jangan lupa simpan mnemonicnya Validator
 
