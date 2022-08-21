@@ -61,6 +61,43 @@ source $HOME/.bash_profile
 Fill the form with your funds wallet info , NOT VALIDATOR WALLET!!!
 [FAUCET FORM](https://pointnetwork.io/testnet-form) , Usually the funds will be sent 24 Hour
 
+## Sending your first transaction
+### Add custom network
+Now while you're waiting for the node to sync, you need to send funds to your validator address. As mentioned, you should have received an airdrop of 1024 XPOINT if you filled in the form. To see them, you can import the private key into a wallet like Metamask (not a good idea for mainnet security, but ok for testnet tokens).
+
+Then you need to add XNet-Triton into Metamask:
+```
+Network Title: Point XNet Triton
+RPC URL: https://xnet-triton-1.point.space/
+Chain ID: 10721
+SYMBOL: XPOINT
+```
+Add the wallet with your 1024 XPOINT
+Remember the wallet you sent to us to be funded? In the form? It now has 1024 XPOINT.
+
+Import the wallet with the private key into your wallet (e.g. Metamask), and you should see 1024 XPOINT there. But this is your fund wallet, not validator wallet.
+
+### Find out which address is your validator wallet
+Evmos has two wallet formats: Cosmos format, and Ethereum format. Cosmos format starts with evmos prefix, and Ethereum format starts with 0x. Most people don't need to know about Cosmos format, but validators should have a way to change from one to another.
+
+Run 
+```
+evmosd keys list --keyring-backend file
+```
+you will see a list of keys attached to your node. Look at the one which has the name `validatorkey`, and note its address (it should be in Cosmos format and start with evmos prefix).
+
+(In most cases it is not needed, but if something goes wrong and if you ever want to import your validator wallet in your Metamask you will need the private key. You can get it with this command: 
+```
+evmosd keys unsafe-export-eth-key validatorkey --keyring-backend file)
+```
+
+Use this tool to convert it to Ethereum format: https://evmos.me/utils/tools
+
+This is your validator address in Ethereum format.
+
+### Fund the validator
+Finally, use the wallet to send however much you need from your fund address to the validator address (you can send all 1024 or choose a different strategy).
+
 ## Create Validator
 Before creating validator please make sure you have the funds already in your wallet minimum 100 point
 To check wallet balance :
