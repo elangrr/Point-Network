@@ -4,7 +4,7 @@
 </p>
 
 <p style="font-size:14px" align="right">
-<a href="www.indonode.dev/" target="_blank">Visit my website <img src="https://avatars.githubusercontent.com/u/34649601?v=4" width="30"/></a>
+<a href="https://indonode.dev/" target="_blank">Visit my website <img src="https://avatars.githubusercontent.com/u/34649601?v=4" width="30"/></a>
 </p>
 
 <p align="center">
