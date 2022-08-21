@@ -15,6 +15,7 @@
 
 ## [Official Guide](https://github.com/pointnetwork/point-chain/blob/xnet-triton/VALIDATORS.md)
 ## [Try Point Network](https://pointnetwork.io/?i=366120433928)
+## [Manual Install](https://github.com/elangrr/Point-Network/blob/main/Manual_install.md) , WARNING! The variable are different from official guide and this guide
 
 ## Automatic Install ##
 ```
