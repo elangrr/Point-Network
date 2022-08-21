@@ -176,9 +176,14 @@ evmosd status 2>&1 | jq .NodeInfo
 To delegate to your validator run this command :
  Note : Change <ammount> to your like , for example : 100000000000000000000apoint is 100point
 ```
-evmosd tx staking delegate $(evmosd tendermint show-address) <ammount>apoint --chain-id=point_10721-1 --from=$validatorkey --gas=400000 --gas-prices=0.025apoint 
+evmosd tx staking delegate $(evmosd tendermint show-address) <ammount>apoint --chain-id=point_10721-1 --from=<evmosvaloper> --gas=400000 --gas-prices=0.025apoint 
 ```
-
+Change `<evmosvaloper>` to your valoper address 
+To check valoper address run this command :
+```
+evmosd debug addr <evmos address>
+```
+  
 ## Validator Management
 Unjail Validator (MAKE SURE YOU ARE SYNCED WITH THE LASTEST NODE!!)
 ```
